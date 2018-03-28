@@ -1,8 +1,8 @@
-/* my second style sheet */
+/* my second style sheet  
 body {
-	font-size:small;
+	/*font-size:small;*/
    	font-family:sans-serif;
-	margin:4em 0px 0px 11.0em;
+	margin:4em 5em 0px 5.0em;
 	margin-right:0.5em;
 	padding:0px;
 	background:white;
@@ -15,9 +15,9 @@ table {
 }
 
 p.std {
-line-height:normal; 
-margin-top:10px;
-clor:red;
+    line-height:normal; 
+    margin-top:10px;
+    color:red;
 } 
 
 h1 { 
