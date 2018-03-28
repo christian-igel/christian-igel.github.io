@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="keywords" content="Christian Igel,homepage,machine learning,autonomous learning,neural networks,evolutionary algorithms,evolutionary computation,support vector machines,SVM,SVMs"> 
+<title>Machine learning solutions</title>
+</head>
+
+<body>
+<h1>Downloads</h1>
+<a name="Shark"></a> 
+ 
+
+<h2>Shark-Library</h2> 
+ 
+The <a href="http://image.diku.dk/shark">Shark machine learning library</a> is a modular C++ library for the design and optimization of adaptive systems.
+
+<p style="line-height:normal">
+<a href="http://image.diku.dk/shark"><img alt="[Shark]" vspace="10" hspace="20"  width="300" align=right src="images/SharkLogo.png" border=0></a> The library provides methods for regression, classification, and density estimation, including various kinds of neural networks and kernel methods, as well as general algorithms for nonlinear optimization, in particular single- and multi-objective evolutionary algorithms and gradient-based methods. 
+</p>
+
+<p style="line-height:normal">
+The most recent version of Shark can be downloaded from <a
+href="http://image.diku.dk/shark">here.</a> <!-- at the SourceForge -->
+<!-- open source repository. -->
+</p>
+
+
+ <h3>Video lecture</h3> 
+	Tobias Glasmachers' 2008 NIPS open source software workshop 
+ 
+<a href='http://videolectures.net/mloss08_glasmachers_shark/'> 
+<!-- <img src='http://videolectures.net/mloss08_glasmachers_shark/thumb.jpg' border=0/> --> 
+video lecture</a> on Shark.
+
+ 
+<h3>Paper describing the library</h3> 
+ 
+<div class=publication>Christian Igel, <a href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Heidrich-Meisner">Verena Heidrich-Meisner</a>, and <a href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Glasmachers">Tobias Glasmachers</a>.  <a href="http://jmlr.csail.mit.edu/papers/volume9/igel08a/igel08a.pdf">Shark</a>.
+<em>Journal of Machine Learning Research</em> <vol>9</vol>, pp. 993-996,
+2008</div>
+
+<a name="svmmodelselection"><br></a> 
+
+<p> 
+
+	
+<h2>Maximum Likelihood Model Selection for SVMs</h2> 
+ 
+
+Adapting the hyperparameters of support vector machines (SVMs) is a challenging model selection problem, especially when flexible kernels are to be adapted and data are scarce. We present a coherent framework for regularized model selection of 1-norm soft margin SVMs for binary classification. We propose to use gradient-ascent on a likelihood function of the hyperparameters. The likelihood function is based on logistic regression for robustly estimating the class conditional probabilities and can be computed efficiently. Overfitting is an important issue in SVM model selection and can be addressed in our framework by incorporating suitable prior distributions over the hyperparameters.
+
+
+<h3>Source code</h3> 
+ <a href="http://www.computer.org/cms/Computer.org/dl/trans/tp/2010/08/extras/ttp2010081522s.tgz">Download</a>
+example code for Shark version 2.
+
+<h3>Paper describing the algorithm</h3> 
+
+<div class=publication>Tobias Glasmachers and Christian Igel. 
+Maximum Likelihood Model Selection for 1-Norm Soft Margin SVMs with Multiple Parameters.
+ <em>IEEE Transactions on Pattern Analysis and Machine
+ Intelligence</em> <vol>32</vol>(8), pp. 1522-1528, 2010 </div>
+
+
+
+<a name="wss"><br></a> 
+ 
+<p> 
+ 
+<h2>Training of Large-scale SVMs</h2> 
+ 
+<img src="images/jmlr05-215-fig4.jpg"  align="right" vspace="10" hspace="20" alt="[feasible region of optimization problem]"> 
+Support vector machines are trained by solving constrained quadratic
+  optimization problems. 
+  This is usually done with an iterative decomposition algorithm
+  operating on a small working set of variables in every iteration.
+  The training time strongly depends on the selection of these
+  variables.  We propose the maximum-gain working set selection
+  algorithm for large scale quadratic programming. It is based on the
+  idea to greedily maximize the progress in each single iteration. The
+  algorithm takes second order information from cached kernel matrix
+  entries into account. We proved the convergence to an optimal
+  solution of a variant termed hybrid maximum-gain working set
+  selection.  This method has been empirically compared to the prominent
+  most violating pair selection and the latest algorithm using second
+  order information. For large training sets our new selection scheme
+  is significantly faster.
+ 
+ 
+ 
+<h3>Source code</h3> 
+ 
+<a href="wss/svm_hmg.cpp">Hybrid Maximum Gain</a> working set
+selection algorithm implemented into <a
+href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/">LIBSVM 2.71</a>.
+It is also implemented in the  <a href="http://shark-project.sourceforge.net">Shark
+machine learning library</a>.
+ 
+ 
+<h3>Supplementary material</h3> 
+ 
+<a href="wss/lemma8.c">This program</a> checks all 2,834,352 cases considered for the proof of Lemma&nbsp;8. However, in the meantime <a
+href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Glasmachers">Tobias Glasmachers</a> found a much more elegant proof:<p> 
+ 
+<div class=publication><a href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Glasmachers">Tobias Glasmachers</a>. On Related Violating Pairs for Working Set Selection in SMO Algorithms. In M. Verleysen, ed.: <em>16th European Symposium on Artificial Neural Networks (ESANN 2008)</em>. Evere, Belgien: d-side publications, 2008</div> 
+ 
+<h3>Paper describing the algorithm</h3> 
+
+<div class=publication><a href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Glasmachers">Tobias Glasmachers</a> and Christian Igel.
+<a href="http://jmlr.csail.mit.edu/papers/volume7/glasmachers06a/glasmachers06a.pdf">Maximum-Gain Working Set
+Selection for SVMs</a>. <em>Journal of Machine Learning Research</em> <vol>7</vol>, pp. 1437-1466, 2006</div> 
+ 
+ 
+<a name="solasvm"><br></a> 
+ 
+<p> 
+ 
+<h2>Online and Active Learning for SVMs</h2> 
+ 
+Iterative learning algorithms that approximate the solution of support
+  vector machines (SVMs) have two potential advantages. First, they
+  allow for online and active learning. Second, for large datasets
+  computing the exact SVM solution may be too time consuming and an
+  efficient approximation can be preferable. The powerful LASVM
+  proposed by A. Bordes, S. Ertekin, J. Weston, and L. Bottou
+  iteratively approaches the exact SVM solution using sequential
+  minimal optimization (SMO).  It allows for efficient online and
+  active learning. This algorithm can be considerably improved in
+  speed and accuracy by replacing the working set selection in the SMO
+  steps. We incorporated a second order working set selection strategy, which greedily
+  aims at maximizing the progress in each single step.
+ 
+<h3>Supplementary material</h3> 
+ 
+The official LASVM website can found <a
+href="http://leon.bottou.org/projects/lasvm">here</a>.  The modified
+LASVM source code implementing  our working set selection strategy
+can be downloaded <a href="solasvm/2nd-order-LASVM.tar.gz">here</a>.
+ 
+<h3>References</h3> 
+ 
+<div class=publication>Antoine Bordes, Seyda Ertekin, Jason Weston, L&#233;on Bottou.
+<a href="http://jmlr.csail.mit.edu/papers/v6/bordes05a.html">Fast Kernel Classifiers with Online and Active Learning</a>. <em>Journal of Machine
+Learning Research</em> <vol>5</vol>,  pp. 1579-1619, 2005</div> 
+ 
+<div class=publication><a href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Glasmachers">Tobias Glasmachers</a> and Christian Igel.
+Second Order SMO Improves SVM Online and Active Learning.
+<em>Neural Computation</em> <vol>20</vol>(2), pp. 374–382, 2008
+</div> 
+ 
+ 
+ 
+<!--
+<a name="approx"><br></a> 
+ 
+<p> 
+ 
+<h2>Resilient Approximation of Kernel Expansions</h2> 
+<img src="images/SuttorpIgel1.png"  align="right" vspace="10" hspace="20" width="200" alt="[SVM after training]"> 
+<img src="images/SuttorpIgel2.png"  align="right" vspace="10"   width="200" alt="[Approximated SVM]"> 
+The execution time of a trained Gaussian process (GP) models grows
+linearly with the number of training data points. The same holds for
+trained support vector machines (SVMs) if the Bayes risk of the
+classification problem is non-zero.  Approximating the SVM and GP
+kernel expansion by a sparser function can solve this problem. We
+empirically compared different variants of approximation algorithms
+and showed that gradient descent using the improved Rprop algorithm
+increases the robustness of the method compared to fixed-point
+iteration.  A finishing gradient descent on all parameters of the
+sparse approximation is computationally demanding, but increases the
+performance.
+ 
+ 
+ 
+<h3>Source code</h3> The algorithms have been added to
+the <a href="http://shark-project.sourceforge.net">Shark machine
+learning library</a>. There is an online tutorial explaining how to
+approximate trained SVMs.
+ 
+<h3>References</h3> 
+ 
+ 
+<div class=publication><a href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Suttorp">Thorsten
+Suttorp</a> and Christian Igel.  <a href="paper/RAoKC.pdf">Resilient Approximation of Kernel
+Classifiers</a>. In J. Marques de S&aacute; et al.,
+eds.: <em>International Conference on Artificial Neural Networks
+(ICANN 2007)</em>, LNCS <vol>4668</vol>, pp. 139-148, Springer-Verlag,
+2007</div> 
+ 
+ 
+ 
+<div class=publication><a href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Suttorp">Thorsten Suttorp</a> and Christian Igel.
+<a href="paper/RAoGPMaT.pdf">Resilient Approximation of Gaussian Process Models after Training</a>. In  M. Verleysen, ed.:
+<em>16th European Symposium on Artificial Neural
+ Networks (ESANN 2008)</em>, pp. 427-432,  Belgium: d-side publications, 2008
+</div> 
+ 
+ 
+<div  class=publication>Sami Romdhani, Philip Torr,  Bernhard Sch&ouml;lkopf, and  
+Andrew Blake.Efficient face detection by a cascaded support-vector machine 
+expansion. <em>Proceedings of the Royal Society A: Mathematical, Physical and
+ Engineering Sciences</em> <vol>460</vol>(2051), pp. 3283-3297, 2004
+</div> 
+-->
+
+<a name="tcbb">
+<a name="kta"> <br></a> 
+ 
+<p> 
+ 
+<h2>Gradient-based Optimization of Kernel-Target Alignment
+for Sequence Kernels Applied to Bacterial Gene Start
+Detection: Sequence Data</h2> 
+ 
+<p style="line-height:normal">Extracting protein-encoding sequences from nucleotide sequences is an important task in bioinformatics. This requires to detect locations at which coding
+regions start. These locations are called translation initiation sites (TIS).</p>
+<!-- <img src="images/TCBB-0022-0206-Fig1.jpg"  align="left"
+vspace="10" hspace="20" alt="geometrical view on kernel-target
+alignment used to adapt kernels for TIS detection">  -->
+ 
+<p style="line-height:normal">
+The TIS2007 data is a reliable data set designed to evaluate machine learning algorithms for automatic TIS detection. It is based on E. coli genes from the
+EcoGene database. Only entries with biochemically verified N-terminus were considered. The neighboring nucleotides were looked up in the GenBank file
+U00096.gbk . From the 732 positive examples associated negative examples were created. For the negative examples, sequences centered around a potential
+start codon were considered and accepted them if the codon is in-frame with one of the real start sites used as a positive case, its distance from a real
+TIS is less than 80 nucleotides, and no in-frame stop codon occurs in between. This data selection generates a difficult benchmark because the negative TISs
+in the data set are both in-frame with and in the neighborhood of the real
+TIS. Finally a set of 1248 negative examples was obtained. The length of each
+sequence is 50 nucleotides, with 32 located upstream and 18 downstream including the start codon.
+</p>
+
+<p style="line-height:normal">
+To minimize sampling effects, 50 different partitionings of the data into training and test sets were generated. Each training set contains 400 sequences
+plus the associated negatives, the corresponding test set 332 sequences plus the associated negatives. Each line in a data file starts with the label, 1 or
+-1 for positive and negative examples, respectively, followed by the nucleotide sequence as ASCII string.
+</p>
+
+<h3>Source code</h3></a> 
+Gradient-based optimization of the kernel-target alignment 
+is available as a standard SVM model selection method in the  <a href="http://shark-project.sourceforge.net">Shark
+library</a>.
+ 
+For an implementation of various oligo kernel functions for the Shark library 
+click  <a href="oligo/oligo.cpp">here</a>.
+ 
+ 
+ 
+<h3>Supplementary material</h3> 
+ 
+<a href="oligo/TIS2007.tgz">All 50 data partitionings in training and test set</a>. 
+ 
+ 
+<!--<img src="images/TCBB-0022-0206-Fig1.jpg"  align="right" vspace="10" hspace="20" alt="geometrical view on kernel-target alignment used to adapt kernels for TIS detection"> --> 
+ 
+<h3>References</h3> 
+ 
+<div class=publication>Christian Igel, <a href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Glasmachers">Tobias
+Glasmachers</a>, Britta
+Mersch, Nico Pfeifer, and <a href="http://gobics.de/peter">Peter
+Meinicke</a>. <a href="paper/GBOoKTAfSKAtBGSD.pdf">Gradient-based Optimization of Kernel-Target Alignment
+for Sequence Kernels Applied to Bacterial Gene Start
+Detection</a>. <em>IEEE/ACM Transactions on Computational Biology and
+Bioinformatics</em> <vol>4</vol>(2),  pp. 216-226, 2007</div> 
+ 
+<div class=publication>Britta Mersch, <a href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Glasmachers">Tobias Glasmachers</a>, Peter
+Meinicke, and Christian Igel. <a href="paper/EOoSKfDoBGS.pdf">Evolutionary Optimization of Sequence
+Kernels for Detection of Bacterial Gene Starts</a>. <em>International
+Journal of Neural Systems</em> <vol>17</vol>(5), selected paper of
+ICANN 2006,  pp. 369-381, 2007</div> 
+ 
+ 
+<a name="ElitistCMA"><br></a> 
+ 
+<p> 
+ 
+<!-- <h2><math xmlns="http://www.w3.org/1998/Math/MathML">(1+&lambda)</math>-CMA-ES: The Elitist Covariance Matrix Adaptation Evolution Strategy</h2>  -->
+<h2><math xmlns="http://www.w3.org/1998/Math/MathML">The Elitist Covariance Matrix Adaptation Evolution Strategy</h2> 
+ 
+<img src="images/CMA_cartoon.gif"  align="right" vspace="10"
+  hspace="20" alt="[CMA-ES]"><p  style="line-height:normal">The covariance matrix adaptation evolution strategy (CMA-ES) is one
+  of the most powerful evolutionary algorithms for real-valued
+    optimization. We propose the an elitist version of this algorithm.
+	<!-- the <math xmlns="http://www.w3.org/1998/Math/MathML">(1+&lambda)</math>-CMA-ES.-->
+	For step size adaption, the algorithms used an improved 1/5-th success rule, which
+	replaces the cumulative path length control in the standard CMA-ES.</p>
+ 
+<p  style="line-height:normal">We developed an incremental Cholesky update for the covariance matrix
+   replacing the computational demanding and numerically involved
+   decomposition of the covariance matrix. This rank-one update can
+   replace the decomposition only for the update without evolution
+   path and reduces the computational effort by a factor of <math>n</math>,
+   where <math>n</math> is the problem dimension.  The resulting
+   <math>(1+1)</math>-Cholesky-CMA-ES is an elegant algorithm and the perhaps
+   simplest evolution strategy with covariance matrix and step size
+   adaptation. </p> 
+ 
+ 
+<h3>Source code</h3> 
+ 
+There are  an example program
+for  the <math>(1+1)</math>-CMA-ES in the <a href="http://shark-project.sourceforge.net">Shark
+library</a>.
+ 
+<h3>Papers describing the algorithm</h3> 
+<div class=publication>Christian Igel,  <a
+href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Sutto
+rp">Thorsten Suttorp</a>, and <a href="http://www.bionik.tu-berlin.de/user/niko">Nikolaus Hansen</a>.
+<a href="paper/ACECMUaa1p1CMAfES.pdf">A Computational Efficient Covariance Matrix Update and a (1+1)-CMA for
+Evolution Strategies</a>. <em>Proceedings of the Genetic and Evolutionary
+Computation Conference (GECCO 2006)</em>,  pp. 453-460, ACM Press</div> 
+ 
+<div class=publication><a href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Suttorp">Thorsten
+Suttorp</a>, <a href="http://www.bionik.tu-berlin.de/user/niko">Nikolaus Hansen</a>, and Christian Igel.
+Efficient Covariance Matrix Update for Variable Metric  Evolution
+Strategies. <em>Machine Learning</em> <vol>75</vol>, pp. 167-197,
+2009</div> 
+ 
+ 
+ 
+<a name="MOCMA"><br></a> 
+ 
+<p> 
+ 
+<h2>Covariance Matrix Adaptation for Multi-objective Optimization</h2> 
+ 
+<img src="images/ContributedHypervolumeANew.png"  align="left" width="200" vspace="10" hspace="20" alt="[Contributing
+Hypervolume]"><p  style="line-height:normal">The covariance matrix adaptation evolution strategy (CMA-ES) is one
+  of the most powerful evolutionary algorithms for real-valued
+  single-objective optimization. We developed a variant of the
+  CMA-ES for multi-objective optimization.</p>
+  
+  <p  style="line-height:normal">In the new multi-objective CMA-ES (MO-CMA-ES) a population of
+  individuals that adapt their search strategy as in the elitist
+  CMA-ES is maintained. These are subject to multi-objective
+  selection. The selection is based on non-dominated sorting using
+  either the crowding-distance or the contributing hypervolume as
+  second sorting criterion. 
+  The MO-CMA-ES inherits important invariance properties, in
+  particular invariance under rotation of the search
+  space, from the original CMA-ES.</p> 
+  
+<h3>Source code</h3> 
+ 
+<!-- You need the <a href="http://shark-project.sourceforge.net">Shark
+library</a> to run the example
+in <a href="CMA/MOCMAExample.tgz">MOCMAExample.tgz</a>, see the READ.ME
+file in the archive. Updated examples are provided in the examples
+directory of the <a href="http://shark-project.sourceforge.net">Shark
+library</a>. -->
+The MO-CMA-ES is part of the <a href="http://shark-project.sourceforge.net">Shark
+library</a>. There is a tutorial and an example program that can serve
+as starting points for using the MO-CMA-ES.
+
+
+<h3>Papers describing the algorithm</h3> 
+ 
+ 
+<div class=publication>Christian Igel,  <a href="http://www.bionik.tu-berlin.de/user/niko">Nikolaus Hansen</a>, and Stefan
+Roth.  Covariance Matrix Adaptation for Multi-objective
+Optimization. <em>Evolutionary Computation</em> <vol>15</vol>(1), pp. 1-28, 2007</div> 
+ 
+<div class=publication><a href="http://www.neuroinformatik.ruhr-uni-bochum.de/thbio/members/profil/Suttorp">Thorsten Suttorp</a>, <a href="http://www.bionik.tu-berlin.de/user/niko">Nikolaus Hansen</a>, and Christian Igel.
+Efficient Covariance Matrix Update for Variable Metric  Evolution Strategies. <em>Machine Learning</em>, 2009</div> 
+ 
+ 
+<a name="Rprop"><br></a> 
+ 
+<p> 
+ 
+<h2>Rprop with Improved Weight-Backtracking</h2> 
+<img src="images/rprop.png"  align="right" width="300"
+vspace="10" hspace="20" alt="[Rprop Scheme]"> 
+The Rprop (Resilient Backpropagation) algorithm proposed by Riedmiller and Braun is one of the best performing
+first-order learning methods. We introduce slight modifications of
+the algorithm  that further improve its robustness and learning speed.
+</p> 
+ 
+We suggest to use weight-backtracking for highly non-linear
+optimization problems. Weight-backtracking means partially retracting
+&#147;unfavorable&#148; previous update steps. Whether a
+parameter change was 
+&#147;unfavorable&#148; or not is decided by a heuristic. We propose an improved
+weight-backtracking heuristic considering both 
+the evolution of the partial derivatives and the value of the objective function. 
+ 
+<h3>Source code</h3> 
+The Rprop algorithms are implemented in the <a href="http://shark-project.sourceforge.net">Shark
+library</a>, which comes with several examples using the Rprop for optimization.
+ 
+<h3>References</h3> 
+ 
+<div class=publication>Christian Igel and <a
+href="http://www.neuroinformatik.ruhr-uni-bochum.de/ini/PEOPLE/huesken/top.html">Michael  H&uuml;sken</a>. <a href="paper/EEotIRLA.pdf">Empirical Evaluation of the Improved
+Rprop Learning Algorithm</a>. <em>Neurocomputing</em> <vol>50</vol>(C), pp.
+105-123, 2003
+</div> 
+ 
+<div class=publication>Christian Igel and <a
+href="http://www.neuroinformatik.ruhr-uni-bochum.de/ini/PEOPLE/huesken/top.html">Michael H&uuml;sken</a>. 
+<a href="paper/ItRLA.ps.gz"> 
+Improving the Rprop Learning Algorithm</a>. In H. Bothe and R. Rojas,
+eds.: <em>Second
+International Symposium on Neural Computation (NC 2000)</em>, pp. 115-121,
+ICSC
+Academic Press, 2000</a>)
+</div> 
+ 
+<div class=publication> 
+Martin Riedmiller. Advanced supervised learning in multilayer perceptrons-from
+backpropagation to adaptive learning techniques. <em>International Journal of  Computer Standards
+and Interfaces</em> <vol>16</vol>(3), pp. 265-278, 1994.
+</div> 
+ 
+<div class=publication> 
+	Martin Riedmiller, Heinreich Braun. A direct adaptive method for faster
+	backpropagation learning: the RPROP algorithm. In: <em>Proceedings of the
+	International Conference on Neural Networks</em>, pp.
+	586-591, IEEE Press, 1993
+</div> 
+ </body>
+</html>
+
