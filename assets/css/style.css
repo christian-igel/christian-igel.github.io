@@ -2,8 +2,8 @@
 body {
 	/*font-size:small;*/
    	font-family:sans-serif;
-	margin:4em 5em 0px 5.0em;
-	margin-right: 5.0em;
+	margin:4em 5em 0px 5.0m;
+	/*margin-right: 5.0em;*/
 	padding:0px;
 	background:white;
 	height:100%;
@@ -179,7 +179,7 @@ div.footnote {
 
 div.publication { 
 	/*background-color:"E0E0E0";*/
-	font-size:small;
+	/*font-size:small;*/
 	margin-bottom:1em;
 	text-indent:-3em;
 	margin-left:3em;
