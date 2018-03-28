@@ -60,3 +60,32 @@ This material is presented to ensure timely dissemination of scholarly and techn
 
 
 
+
+<a name="y17"></a>
+<h4>2017</h4>
+<div class=publication>
+  Fabian Gieseke, Cosmin Oancea, and Christian  Igel.
+ bufferkdtree: A Python Library for Massive Nearest Neighbor Queries on Multi-Many-Core Devices.
+  <em>Knowledge-Based Systems</em> <vol>120</vol>, pp. 1-3, 2017
+</div>
+
+
+<div class=publication>
+Jan Kremer, Kristoffer Stensbo-Smidt, Fabian Gieseke, Kim
+  Steenstrup Pedersen, and Christian Igel.
+  <a href="paper/BUBDMLaIAfA.pdf">Big Universe, Big Data: Machine Learning and Image Analysis for Astronomy</a>.
+  <em>IEEE Intelligent Systems</em> <vol>32</vol>(2), pp. 16-22, 2017
+</div>
+
+
+<div class=publication>Marc Schlipsing, Jan Salmen, Marc Philipp Tschentscher, and Christian
+  Igel. Adaptive Pattern Recognition in Real-time Video-based Soccer Analysis.
+  <em>Journal of Real-Time Image Processing</em> <vol>13</vol>(2), pp. 345-361, 2017</div>
+
+<div class=publication>
+Lauge Sørensen, Christian Igel, Akshay Pai, Ioana Balas, Cecilie
+  Anker, Martin Lillholm, and Mads Nielsen.
+  <a href="paper/DDoMCIaADUSMRICTHSHTaV.pdf">Differential diagnosis of mild cognitive impairment and Alzheimer's disease using structural MRI cortical thickness, hippocampal shape, hippocampal texture, and volumetry</a>.
+<em>NeuroImage: Clinical</em> <vol>13</vol>, pp. 470-482, 2017
+</div>
+
