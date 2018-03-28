@@ -47,19 +47,14 @@ This material is presented to ensure timely dissemination of scholarly and techn
 
 #### Coming soon
 
-<a name="top"></a>
-
 <div class="publication">Fabian Gieseke, Kai Polsterer, Ashish Mahabal, Christian Igel, and Tom Heskes. Massively-Parallel Best Subset Selection for Ordinary Least-Squares Regression. _IEEE Symposium Series on Computational Intelligence (SSCI 2017)_, IEEE Press, accepted</div>
 
 <div class="publication">Jan Kremer, Fei Sha, and Christian Igel. Robust Active Label Correction. _International Conference on Artificial Intelligence and Statistics (AISTATS)_, accepted</div>
-
-<a name="y18"></a>
 
 #### 2018
 
 <div class="publication">Oswin Krause, Asja Fischer and Christian Igel. Population-Contrastive-Divergence: Does Consistency help with RBM training? _Pattern Recognition Letters_ <vol>102</vol>, pp. 1-7, 2018</div>
 
-<a name="y17"></a>
 
 #### 2017
 
