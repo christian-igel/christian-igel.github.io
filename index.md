@@ -49,7 +49,7 @@ This material is presented to ensure timely dissemination of scholarly and techn
 
 Fabian Gieseke, Kai Polsterer, Ashish Mahabal, Christian Igel, and Tom Heskes. Massively-Parallel Best Subset Selection for Ordinary Least-Squares Regression. _IEEE Symposium Series on Computational Intelligence (SSCI 2017)_, IEEE Press, accepted
 
-<div class="publication">Jan Kremer, Fei Sha, and Christian Igel. Robust Active Label Correction. _International Conference on Artificial Intelligence and Statistics (AISTATS)_, accepted
+Jan Kremer, Fei Sha, and Christian Igel. Robust Active Label Correction. _International Conference on Artificial Intelligence and Statistics (AISTATS)_, accepted
 
 #### 2018
 
