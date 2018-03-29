@@ -44,7 +44,19 @@ h2 {
 h3 { 
 	text-align:left;
 	font-weight:bold;
+	margin-top:20px;
+	/*color: #005500;*/
+	font-size: medium
 	/*font-family:arial,sans-serif;*/
+}
+
+h4 { 
+	text-align:left;
+	font-weight:bold;
+	/*color: #005500;*/
+	font-size: medium;
+	/*font-family:arial,sans-serif;*/
+	font-style: italic;
 }
 
 .quote {
@@ -217,7 +229,6 @@ a:hover {
 
 .sidenavsub {
     background: white;
-    font-size:smaller;
     width: 120px;
     left: 5px;
     position:relative;
@@ -227,6 +238,14 @@ a:hover {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: large;
+    color: #005500;
+    display: block;
+}
+
+.sidenavsub a {
+    padding: 6px 8px 6px 11px;
+    text-decoration: none;
+    font-size: medium;
     color: #005500;
     display: block;
 }
