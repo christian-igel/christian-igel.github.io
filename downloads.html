@@ -7,16 +7,76 @@
 </head>
 
 <body>
-<h1>Downloads</h1>
-<a name="Shark"></a> 
- 
+<div class="sidenav">
+  <a href="index.html">About</a>
+  <a href="publications.html">Publications</a>
+  <a href="downloads.html">Downloads</a>
 
-<h2>Shark-Library</h2> 
+<div class="sidenavsub">
+  <a href="#bufferkdtree">bufferkdtree</a>
+  <a href="#Shark">Shark</a>
+  <a href="#nnratio">nnratio</a>
+  <a href="#svmmodelselection">SVM model selection</a>
+  <a href="#wss">SVM training</a>
+  <a href="#solasvm">SVM online learning</a>
+  <a href="#kta">KTA optimization</a>
+  <a href="#MOCMA">MO-CMA</a>
+  <a href="#Rprop">Rprop</a>
+</div>
+</div>
+
+
+<h1>Downloads</h1>
  
-The <a href="http://image.diku.dk/shark">Shark machine learning library</a> is a modular C++ library for the design and optimization of adaptive systems.
+<a name="bufferkdtree"></a> 
+<h2>bufferkdtree</h2>
+<a href="http://bufferkdtree.readthedocs.io"><img alt="[bufferkdtree]" vspace="10" hspace="20"  width="200" align=right src="http://bufferkdtree.readthedocs.io/en/stable/_images/bufferkdtree.png" border=0></a>
+Download <a href="http://bufferkdtree.readthedocs.io">bufferkdtree</a>
+for blistering fast 
+nearest neighbor seach on GPUs.
+Comes with a Python frontend.
+<h3>Paper describing the package</h3> 
+<div class=publication>
+  Fabian Gieseke, Cosmin Oancea, and Christian  Igel.
+ bufferkdtree: A Python Library for Massive Nearest Neighbor Queries on Multi-Many-Core Devices.
+  <em>Knowledge-Based Systems</em> <vol>120</vol>, pp. 1-3, 2017
+</div>
+<div class=publication>
+Fabian Gieseke, Cosmin Eugen Oancea, Ashish Mahabal, Christian
+Igel, and Tom Heskes. Bigger Buffer k-d Trees
+on Multi-Many-Core Systems.
+<em>Big Data & Deep Learning in High Performance Computing</em>, pp. 172–180. Springer-Verlag, 2016.
+</div>
+<div class=publication>Fabian  Gieseke,
+Justin  Heinermann,
+Cosmin  Oancea, and
+Christian  Igel.  <a href="http://jmlr.org/proceedings/papers/v32/gieseke14.pdf">Buffer k-d Trees: Processing Massive Nearest Neighbor
+  Queries on GPUs</a>.
+  <em>JMLR W&CP</em> <vol>32</vol> (ICML), pp. 172-180, 2014</div>
+
+
+<a name="nnratio"></a> 
+  <h2>nnratio</h2>
+<!--  <a href="https://github.com/kremerj/nnratio"><img alt="[nnratio]" vspace="10" hspace="20"  width="400" align=right src="http://github.com/kremerj/nnratio/blob/master/images/example.png" border=0></a>-->
+
+Go to <a href="https://github.com/kremerj/nnratio">nnratio</a> for a
+    nearest neighbor density ratio estimator implemented in Python.
+
+<h3>Paper describing the package</h3> 
+<div class=publication>Jan Kremer, Fabian Gieseke, Kim Steenstrup
+  Pedersen, and Christian Igel.  <a href="paper/NNDREfLSAiA.pdf">Nearest Neighbor Density 
+Ratio Estimation for Large-Scale Applications in
+  Astronomy</a>. <em>Astronomy and Computing</em> <vol>12</vol>, pp. 67-72, 2015</div>
+
+
+
+<a name="Shark"></a> 
+<h2>Shark</h2> 
+ 
+The <a href="https://github.com/Shark-ML/Shark">Shark machine learning library</a> is a modular C++ library for the design and optimization of adaptive systems.
 
 <p style="line-height:normal">
-<a href="http://image.diku.dk/shark"><img alt="[Shark]" vspace="10" hspace="20"  width="300" align=right src="images/SharkLogo.png" border=0></a> The library provides methods for regression, classification, and density estimation, including various kinds of neural networks and kernel methods, as well as general algorithms for nonlinear optimization, in particular single- and multi-objective evolutionary algorithms and gradient-based methods. 
+<a href="https://github.com/Shark-ML/Shark"><img alt="[Shark]" vspace="10" hspace="20"  width="200" align=right src="images/SharkLogo.png" border=0></a> The library provides methods for regression, classification, and density estimation, including various kinds of neural networks and kernel methods, as well as general algorithms for nonlinear optimization, in particular single- and multi-objective evolutionary algorithms and gradient-based methods. 
 </p>
 
 <p style="line-height:normal">
@@ -40,11 +100,11 @@ video lecture</a> on Shark.
 <em>Journal of Machine Learning Research</em> <vol>9</vol>, pp. 993-996,
 2008</div>
 
-<a name="svmmodelselection"><br></a> 
-
 <p> 
 
 	
+<a name="svmmodelselection"><br></a> 
+
 <h2>Maximum Likelihood Model Selection for SVMs</h2> 
  
 
@@ -94,7 +154,7 @@ Support vector machines are trained by solving constrained quadratic
 <a href="wss/svm_hmg.cpp">Hybrid Maximum Gain</a> working set
 selection algorithm implemented into <a
 href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/">LIBSVM 2.71</a>.
-It is also implemented in the  <a href="http://shark-project.sourceforge.net">Shark
+It is also implemented in the  <a href="https://github.com/Shark-ML/Shark">Shark
 machine learning library</a>.
  
  
