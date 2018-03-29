@@ -3,7 +3,7 @@ body {
 	/*font-size:small;*/
    	font-family:sans-serif;
 	margin-top: 2.0em;
-	margin-right: 140px;
+	margin-right: 75px;
 	margin-left: 150px;
 	padding:0px;
 	background:white;
@@ -12,7 +12,7 @@ body {
 }
 
 table {
-	font-size:small;
+	/*font-size:small;*/
 }
 
 p.std {
