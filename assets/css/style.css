@@ -3,12 +3,14 @@ body {
 	/*font-size:small;*/
    	font-family:sans-serif;
 	margin-top: 2.0em;
-	margin-right: 75px;
-	margin-left: 150px;
+	//margin-right: 75px;
+	//margin-left: 75px;
 	padding:0px;
 	background:white;
 	height:100%;
 	color:black;
+	text-align: center;
+	line-height: 125%;
 }
 
 table {
@@ -220,11 +222,15 @@ a:hover {
     width: 130px;
     position: fixed;
     z-index: 1;
-    top: 20px;
-    left: 10px;
+    //top: 20px;
+    //left: -10px;
+    //right:50%
+    margin-left:10px;      
+    margin-top:-8px;      
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
+    text-align:left;
 }
 
 .sidenavsub {
@@ -232,6 +238,7 @@ a:hover {
     width: 120px;
     left: 5px;
     position:relative;
+    text-align:left
 }
 
 .sidenav a {
@@ -246,6 +253,7 @@ a:hover {
     padding: 6px 8px 6px 11px;
     text-decoration: none;
     font-size: medium;
+    line-height: 100%;
     color: #005500;
     display: block;
 }
@@ -253,4 +261,17 @@ a:hover {
 .sidenav a:hover {
     color: gray;
 }
+
+#page-wrap {
+  text-align: left;
+  max-width: 865px;
+  margin: 0 auto;
+  //padding: 10 10;
+}
+
+#inner-page {
+  text-align: left;
+  margin: 0px 10px 0px 140px; 
+}
+
 
