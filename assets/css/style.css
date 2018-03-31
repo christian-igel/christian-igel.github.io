@@ -24,7 +24,8 @@ p.std {
 } 
 
 h1 { 
-	text-align:left;
+    margin-top:8px;
+    text-align:left;
 	/*font-size:large;*/
 	/*font-family:arial,sans-serif; */
 	font-weight:bold;
@@ -226,7 +227,7 @@ a:hover {
     //left: -10px;
     //right:50%
     margin-left:10px;      
-    margin-top:-8px;      
+    //margin-top:-8px;      
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
