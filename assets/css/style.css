@@ -17,6 +17,19 @@ table {
 	/*font-size:small;*/
 }
 
+img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */
+}
+
+img.eight {
+  height: 80%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 p.std {
     line-height:normal; 
     margin-top:10px;
@@ -275,12 +288,6 @@ a:hover {
 #inner-page {
   text-align: left;
   margin: 0px 8px 0px 145px;
-
-  img{
-        max-width: 100%;
-        max-height: 100%;
-        display: block; /* remove extra space below image */
-    }
 }
 
 #rounded {
