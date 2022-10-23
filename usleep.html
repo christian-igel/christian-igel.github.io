@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="keywords" content="Christian Igel,homepage,machine learning,autonomous learning,neural networks,evolutionary algorithms,evolutionary computation,support vector machines,SVM,SVMs"> 
+<title>Machine learning solutions</title>
+</head>
+
+<body>
+<div id="page-wrap">
+<div class="sidenav">
+  <a href="index.html">About</a>
+  <a href="publications.html">Publications</a>
+  <a href="downloads.html">Downloads</a>
+  <a href="https://ai.ku.dk">AI Centre</a>
+  <a href="https://di.ku.dk/english/research/machine-learning">ML Section</a>
+</div>
+
+<div id="inner-page">
+<h1>U-Sleep</h1>
+ 
+  
+  
+  <h2>Project Description</h2>
+Sleep is one of the most fundamental
+physiological processes, and abnormal sleeping patterns are associated
+with poor health. They may, for example, indicate brain- & heart
+diseases, obesity and di- abetes. The most important tool to study
+sleep and to diagnose sleep related diseases is polysomnography (PSG),
+a recording of brain and body signals usually performed overnight at
+sleep clinics.  Processing a single PSG requires hours of work from
+clinical personnel. In this project, we develop a novel system
+that will support clinicians by automating sleep analysis. We develop
+new deep learning approaches for segmantic segmentation, in particular
+  for time series segmentation. The latter allow us  to analyse sleep data faster and with higher accuracy
+than human experts.  The system increases the throughput of sleep
+clinics and ultimately supports a more precise, early-stage diagnosis
+of diseases, allowing for more
+promising treatments.
+
+<img href='https://dff.dk/@@site-logo-en/dff-logo.png'>
+
+
+
+  U-Sleep
+  https://sleep.ai.ku.dk
+
+  
+
+  <h2>Download</h2>
+
+
+  <h2>Multi-Planar UNet</h2>
+  Download 
+ <a href="https://github.com/perslev/MultiPlanarUNet">Multi-Planar
+  UNet</a>, a simple and thoroughly evaluated deep learning Python framework for segmentation of arbitrary medical image volumes. The system requires no task-specific information, no human interaction and is based on a fixed model topology and a fixed hyperparameter set, eliminating the process of model selection and its inherent tendency to cause method-level over-fitting. The system is available in open source and does not require deep learning expertise to use. Without task-specific modifications, the system performed better than or similar to highly specialized deep learning methods across 3 separate segmentation tasks. In addition, it ranked 5-th and 6-th in the first and second round of the 2018 Medical Segmentation Decathlon comprising another 10 tasks. The system relies on multi-planar data augmentation which facilitates the application of a single 2D architecture based on the familiar U-Net. Multi-planar training combines the parameter efficiency of a 2D fully convolutional neural network with a systematic train- and test-time augmentation scheme, which allows the 2D model to learn a representation of the 3D image volume that fosters generalization.
+
+  <h3>Paper describing the package</h3> 
+<div class=publication>
+Mathias Perslev,
+    Erik Dam,
+    Akshay Pai, and
+    Christian Igel.
+<a href="https://arxiv.org/abs/1911.01764">One Network To Segment Them All: A General, Lightweight System for
+  Accurate 3D Medical Image Segmentation</a>. In:
+<em>Medical Image Computing and Computer Assisted
+  Intervention (MICCAI)</em>, LNCS <vol>11765</vol>, pp. 30-38, Springer, 2019
+</div>
+
+<a name="utime"><br></a>
+
+<p>
+
+<h2>U-Time</h2>
+
+<a  href="https://github.com/perslev/U-Time">U-Time</a> is a fully feed-forward deep learning approach to physiological time series segmentation developed for the analysis of sleep data. U-Time is a temporal fully convolutional network based on the U-Net architecture.It maps sequential inputs of arbitrary length to sequences of class labels on a freely chosen temporal scale. This is done by implicitly classifying every individual time-point of the input signal and aggregating these classifications over fixed intervals to form the final predictions. 
+
+<p>
+Download U-Time <a  href="https://github.com/perslev/U-Time">here</a>.
+
+<h3>Paper describing the package</h3> 
+<div class=publication>
+  Mathias Perslev,
+Michael Hejselbak Jensen,
+Sune Darkner,
+Poul Jørgen Jennum, and
+Christian Igel. 
+<a href="https://arxiv.org/abs/1910.11162">U-Time: A Fully Convolutional Network for Time Series Segmentation
+  Applied to Sleep Staging</a>.
+  <em>Advances in Neural Information Processing Systems
+  (NeurIPS 2019)</em>, 2019
+  </div>
+  
+
+
+
+  <h2>Publications</h2>
+  <h3>Contributions to journals, books, and conferences</h3>
+
+   <div class=publication>
+Michela Antonelli, Annika Reinke, Spyridon Bakas, Keyvan Farahani,
+     Annette Kopp-Schneider, Bennett A Landman, Geert Litjens, Bjoern
+     Menze, Olaf Ronneberger, Ronald M Summers, Bram van Ginneken,
+     Michel Bilello, Patrick Bilic, Patrick F Christ, Richard KG Do,
+     Marc J Gollub, Stephan H Heckers, Henkjan Huisman, William R
+     Jarnagin, Maureen K McHugo, Sandy Napel, Jennifer S Golia
+     Pernicka, Kawal Rhode, Catalina Tobon-Gomez, Eugene Vorontsov,
+     James A Meakin, Sebastien Ourselin, Manuel Wiesenfarth, Pablo
+     Arbeláez, Byeonguk Bae, Sihong Chen, Laura Daza, Jianjiang Feng,
+     Baochun He, Fabian Isensee, Yuanfeng Ji, Fucang Jia, Ildoo Kim,
+     Klaus Maier-Hein, Dorit Merhof, Akshay Pai, Beomhee Park, Mathias
+     Perslev, Ramin Rezaiifar, Oliver Rippel, Ignacio Sarasua, Wei
+     Shen, Jaemin Son, Christian Wachinger, Liansheng Wang, Yan Wang,
+     Yingda Xia, Daguang Xu, Zhanwei Xu, Yefeng Zheng, Amber L
+     Simpson, Lena Maier-Hein, M Jorge Cardoso.
+     <em>Nature Communications</em> <vol>13</vol>(1):1-13, 2022
+   </div>
+  
+    <div class=publication>
+  Mathias Perslev, Akshay Pai, Jon Runhaar, Christian
+Igel, and Erik B. Dam. <a href="https://doi.org/10.1002/jmri.27978">Cross-Cohort Automatic Knee MRI Segmentation with
+  Multi-Planar U-Nets</a>. <em>Journal of Magnetic Resonance
+      Imaging</em>, 2022
+    </div>
+
+    <div class=publication>
+  Arjun D. Desai, Francesco Caliva, Claudia Iriondo, Naji Khosravan,
+Aliasghar Mortazi, Sachin Jambawalikar, Drew Torigian, Jutta Ellerman,
+Mehmet Akcakaya, Ulas Bagci, Radhika Tibrewala, Io Flament, Matthew
+O'Brien, Sharmila Majumdar, Mathias Perslev, Akshay Pai, Christian
+Igel, Erik B. Dam, Sibaji Gaj, Mingrui Yang, Kunio Nakamura, Xiaojuan
+Li, Cem M. Deniz, Vladimir Juras, Ravinder Regatte, Garry E. Gold, Brian
+  A Hargreaves, Valentina Pedoia, and Akshay S. Chaudhari.
+  <a href="https://arxiv.org/abs/2004.14003">The International Workshop on Osteoarthritis Imaging Knee MRI Segmentation Challenge: A Multi-Institute Evaluation and Analysis Framework on a Standardized Dataset</a>.
+<em>Radiology: Artificial Intelligence</em> <vol>3</vol>:e200078, 2021
+    </div>
+
+      <div class=publication>
+    <a href="https://sleep.ai.ku.dk"><img src="images/USleepHead.png"  align="right" style="margin: 0px 10px 10px 10px" width="250" alt="[U-Sleep]"></a>
+  Mathias Perslev,
+  Sune Darkner,
+  Lykke Kempfner,
+  Miki Nikolic,
+Poul Jørgen Jennum, and
+Christian Igel. 
+<a href="https://rdcu.be/ciJT0">U-Sleep: Resilient High-Frequency Sleep Staging</a>.
+<em>npj Digital Medicine</em> <vol>4</vol>, 2021
+</div>
+
+<div class=publication>
+Thorbjørn Louring Koch, Mathias Perslev, Christian Igel, and Sami Sebastian Brandt.
+Accurate Segmentation of Dental Panoramic Radiographs with U-Nets. 
+In: <em>IEEE International Symposium on Biomedical Imaging
+  (ISBI)</em>, pp. 15-19, IEEE Press, 2019
+</div>
+
+ <div class=publication>
+  Mathias Perslev,
+Michael Hejselbak Jensen,
+Sune Darkner,
+Poul Jørgen Jennum, and
+Christian Igel. 
+<a href="https://arxiv.org/abs/1910.11162">U-Time: A Fully Convolutional Network for Time Series Segmentation
+  Applied to Sleep Staging</a>.
+  <em>Advances in Neural Information Processing Systems
+  (NeurIPS 2019)</em>, pp. 4417-4428, 2019
+  <a href="downloads.html#utime" class="sup">source code</a> 
+ </div>
+
+ <div class=publication>
+Mathias Perslev,
+    Erik Dam,
+    Akshay Pai, and
+    Christian Igel.
+<a href="https://arxiv.org/abs/1911.01764">One Network To Segment Them All: A General, Lightweight System for
+  Accurate 3D Medical Image Segmentation</a>. In:
+<em>Medical Image Computing and Computer Assisted
+  Intervention (MICCAI)</em>, LNCS <vol>11765</vol>, pp. 30-38, Springer, 2019 <a href="downloads.html#mpunet" class="sup">source code</a>
+ </div>
+
+
+<div class=publication>
+Mathias Perslev, Akshay  Pai, Christian Igel, and Erik Dam. Knee
+  Segmentation by Multiplanar Deep Learning Network – with data from
+  OAI.
+  <em>International Workshop on Osteoarthritis Imaging</em>, 2018
+</div>
+
+
+ <h3>Abstracts and not strictly peer-reviewed contributions to
+conferences and journals</h3>
+
+
+
+<div class=publication>
+Erik B. Dam, Arjun Desai, Cem M. Deniz, H. Rajamohan, Ravinder
+  Regatte, Claudia Iriondo, Valentina Pedoia, Sharmila Majumdar,
+  Mathias Perslev, Christian Igel, Akshay Pai, Sibaji Gaj, Mingrui
+  Yang, Kunio Nakamura, Xiaojuan Li, H. Maqbool, I. Irmakci,
+  S.-E. Song, Ulas Bagci, Brian A. Hargreaves, Garry E. Gold, and
+Akshay S. Chaudhari. Multi-institutional large-scale validation of 8 methods
+for automatic knee MRI segmentation for use in clinical
+trials. <em>Osteoarthritis and Cartilage</em> <vol>30</vol>:S291–S292, 2022.
+</div>
+
+<div class=publication>
+Arjun D. Desai, Francesco Caliva, Claudia Iriondo, Naji Khosravan,
+Aliasghar Mortazi, Sachin Jambawalikar, Drew Torigian, Jutta Ellerman,
+Mehmet Akcakaya, Ulas Bagci, Radhika Tibrewala, Io Flament, Matthew
+O'Brien, Sharmila Majumdar, Mathias Perslev, Akshay Pai, Christian
+Igel, Erik B. Dam, Sibaji Gaj, Mingrui Yang, Kunio Nakamura, Xiaojuan
+Li, Cem M. Deniz, Vladimir Juras, Ravinder Regatte, Garry E. Gold, Brian
+  A. Hargreaves, Valentina Pedoia, and Akshay S. Chaudhari.
+  A multi-institute automated segmentation evaluation on a standard
+  dataset: Findings from the international workshop on osteoarthritis
+  imaging segmentation challenge. <em>Osteoarthritis and Cartilage</em> <vol>28</vol>, pp. S304–S305, 2020
+</div>
+
+<div class=publication>
+Mathias Perslev, Akshay  Pai, Christian Igel, Jos Runhaar, and Erik Dam. Validation of an
+  open source, generic deep learning architecture for 3D MRI
+  segmentation - with data from the OAI, PROOF, and
+  CCBR. <em>Osteoarthritis and Cartilage</em> <vol>27</vol>(Supplement
+  1), pp. S393–S394, 2019
+</div>
+
+<div class=publication>
+Mathias Perslev, Akshay  Pai, Christian Igel, and Erik Dam. Knee Segmentation by Multiplanar Deep Learning Network - with data from OAI. <em>International Workshop on Osteoarthritis Imaging</em>, 2018
+</div>
+
+
+</div>
+</div>
+</body>
+</html>
+
