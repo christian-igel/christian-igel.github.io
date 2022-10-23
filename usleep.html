@@ -19,7 +19,7 @@
 <div id="inner-page">
 <h1>U-Sleep</h1>
  
-  
+  <img src="images/USleepHead.png" alt="[U-Sleep]">
   
   <h2>Project Description</h2>
 Sleep is one of the most fundamental
@@ -38,13 +38,18 @@ clinics and ultimately supports a more precise, early-stage diagnosis
 of diseases, allowing for more
 promising treatments.
 
-U-Sleep is funded by the Danish   
-<img src='https://dff.dk/@@site-logo-en/dff-logo.png'>
+
+<p>
+  U-Sleep is funded by the <a  href="https://dff.dk/en/front-page?set_language=en">Independent Research Fund Denmark (DFF)</a>
+  
+<img src='https://dff.dk/@@site-logo-en/dff-logo.png' alt='[DFF Logo]'>
 
 
-
-  U-Sleep
-  https://sleep.ai.ku.dk
+<h2>U-Sleep online</h2>
+  U-Sleep is an online service for automatic clinical sleep
+  staging. It maps clinical polysomnography (PSG) data to sleep
+  stages. Use it for free:
+  <a href='https://sleep.ai.ku.dk'>https://sleep.ai.ku.dk</a>
 
   
 
@@ -57,7 +62,20 @@ U-Sleep is funded by the Danish
   UNet</a>, a simple and thoroughly evaluated deep learning Python framework for segmentation of arbitrary medical image volumes. The system requires no task-specific information, no human interaction and is based on a fixed model topology and a fixed hyperparameter set, eliminating the process of model selection and its inherent tendency to cause method-level over-fitting. The system is available in open source and does not require deep learning expertise to use. Without task-specific modifications, the system performed better than or similar to highly specialized deep learning methods across 3 separate segmentation tasks. In addition, it ranked 5-th and 6-th in the first and second round of the 2018 Medical Segmentation Decathlon comprising another 10 tasks. The system relies on multi-planar data augmentation which facilitates the application of a single 2D architecture based on the familiar U-Net. Multi-planar training combines the parameter efficiency of a 2D fully convolutional neural network with a systematic train- and test-time augmentation scheme, which allows the 2D model to learn a representation of the 3D image volume that fosters generalization.
 
 
-<h3>U-Time</h2>
+<h3>U-Sleep and U-Time</h2>
+In <a  href="https://github.com/perslev/U-Time">this repository</a>
+you find our official software package developed for and used to
+create the free and public sleep staging system U-Sleep. U-Sleep is a
+fully convolutional deep neural network for automated sleep staging. A
+single instance of the model may be trained to perform accurate and
+resilient sleep staging across a wide range of clinical populations
+and polysomnography (PSG) acquisition protocols. This software allows simultaneous training of U-Sleep across any
+number of PSG datasets using on-the-fly random selection of input
+channel configurations. It features a command-line interface for
+initializing, training and evaluating models without needing to modify
+the underlying codebase.
+
+
 
 <a  href="https://github.com/perslev/U-Time">U-Time</a> is a fully feed-forward deep learning approach to physiological time series segmentation developed for the analysis of sleep data. U-Time is a temporal fully convolutional network based on the U-Net architecture.It maps sequential inputs of arbitrary length to sequences of class labels on a freely chosen temporal scale. This is done by implicitly classifying every individual time-point of the input signal and aggregating these classifications over fixed intervals to form the final predictions. 
 
