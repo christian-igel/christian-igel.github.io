@@ -114,7 +114,7 @@ body>#header {
 
 ul {
 	list-style-type:square;
-	margin-top:-10px;
+	margin-top:0;
 	margin-left:0px;
 	/*margin: 0px; */
 	padding: 0px; 
@@ -293,4 +293,3 @@ a:hover {
 #rounded {
     border-radius: 10px;
 }
-
