@@ -289,3 +289,7 @@ a:hover {
 #rounded {
     border-radius: 10px;
 }
+
+html { 
+	scrollbar-gutter: stable; 
+}
